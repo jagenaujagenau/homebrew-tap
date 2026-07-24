@@ -7,7 +7,7 @@ cask "dropcel" do
   desc "Drop a project into a folder. Seconds later, it's live on Vercel."
   homepage "https://github.com/jagenaujagenau/dropcel"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Dropcel.app"
 
