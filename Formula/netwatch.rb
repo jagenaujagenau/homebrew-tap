@@ -16,7 +16,6 @@ class Netwatch < Formula
   url "https://github.com/jagenaujagenau/netwatch.git",
       tag:      "v0.1.0",
       revision: "28b883e37904fea8022d09f70242295058c68bca"
-  version "0.1.0"
   license "MIT"
   head "https://github.com/jagenaujagenau/netwatch.git", branch: "main"
 
