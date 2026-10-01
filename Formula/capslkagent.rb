@@ -11,12 +11,12 @@
 # Publish this file in a tap repo named `homebrew-tap`; users then run:
 #   brew install jagenaujagenau/tap/capslkagent
 class Capslkagent < Formula
-  desc "Claude Code agent status indicator using keyboard LEDs"
+  desc "Coding agent status indicator using keyboard LEDs"
   homepage "https://github.com/jagenaujagenau/capslkagent"
   url "https://github.com/jagenaujagenau/capslkagent.git",
-      tag:      "v0.1.0",
-      revision: "caca35024a1ae5f28862642ce0e26672f23267f8"
-  version "0.1.0"
+      tag:      "v0.2.0",
+      revision: "eed62f4fb85c26440671407ea42a2b95a84e2448"
+  version "0.2.0"
   license "MIT"
   head "https://github.com/jagenaujagenau/capslkagent.git", branch: "main"
 
@@ -26,16 +26,18 @@ class Capslkagent < Formula
     system "cargo", "install", *std_cargo_args
   end
 
-  # Homebrew has no uninstall hook, so it can't remove the Claude Code hooks on
-  # `brew uninstall`. Remind the user to do it themselves. (Leftover hooks are
-  # harmless anyway — they self-guard and no-op once the binary is gone.)
+  # Homebrew has no uninstall hook, so it can't remove the agent hooks/plugins
+  # on `brew uninstall`. Remind the user to do it themselves. (Leftovers are
+  # harmless anyway — they no-op once the binary is gone.)
   def caveats
     <<~EOS
-      To use as a Claude Code status light, wire up the hooks:
-        capslkagent install-hooks
+      To use as a coding agent status light, wire it into your agent:
+        capslkagent install-hooks                # Claude Code
+        capslkagent install-hooks --agent all    # every supported agent found
+      (agents: claude, codex, pi, omp, amp, opencode)
 
       Before `brew uninstall`, remove them with:
-        capslkagent uninstall-hooks
+        capslkagent uninstall-hooks --agent all
     EOS
   end
 
