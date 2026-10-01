@@ -15,7 +15,7 @@ class Capslkagent < Formula
   homepage "https://github.com/jagenaujagenau/capslkagent"
   url "https://github.com/jagenaujagenau/capslkagent.git",
       tag:      "v0.2.0",
-      revision: "eed62f4fb85c26440671407ea42a2b95a84e2448"
+      revision: "cdb93c1e6f232eefef67ff24982d240bff93465f"
   version "0.2.0"
   license "MIT"
   head "https://github.com/jagenaujagenau/capslkagent.git", branch: "main"
