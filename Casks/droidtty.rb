@@ -2,10 +2,17 @@ cask "droidtty" do
   version "0.5.1"
   sha256 "64b9863bf058be4b6a77d2993f541c425c6abe9f02803fde69b65a6fffedbf16"
 
-  url "https://hzbekorpbjfrpw9z.public.blob.vercel-storage.com/desktop/64b9863bf058/Droidtty-Bridge-0.5.1-arm64.dmg"
+  url "https://hzbekorpbjfrpw9z.public.blob.vercel-storage.com/desktop/64b9863bf058/Droidtty-Bridge-#{version}-arm64.dmg"
   name "Droidtty Bridge"
   desc "Pair your phone with Herdr to approve, answer and steer coding agents"
   homepage "https://droidtty.com"
+
+  livecheck do
+    url "https://hzbekorpbjfrpw9z.public.blob.vercel-storage.com/desktop/latest.json"
+    strategy :json do |json|
+      json["version"]
+    end
+  end
 
   depends_on arch: :arm64
   depends_on macos: ">= :ventura"
