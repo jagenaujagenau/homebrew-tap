@@ -9,6 +9,8 @@ Homebrew tap for:
   searching Google Flights.
 - [netwatch](https://github.com/jagenaujagenau/netwatch) — a terminal explorer
   for the devices on your local network.
+- [Droidtty Bridge](https://droidtty.com) — the desktop app that pairs your phone
+  with Herdr so you can approve, answer and steer coding agents from it (cask).
 
 ## Install
 
@@ -16,6 +18,7 @@ Homebrew tap for:
 brew install jagenaujagenau/tap/capslkagent
 brew install jagenaujagenau/tap/gf-tui
 brew install jagenaujagenau/tap/netwatch
+brew install --cask jagenaujagenau/tap/droidtty
 ```
 
 Then wire capslkagent into Claude Code:
