@@ -1,8 +1,8 @@
 cask "droidtty" do
-  version "0.6.0"
-  sha256 "6b0c2e967ff79e127d4b2776ee77a876dfa5c9384f559f62a594ff0adfb31276"
+  version "0.7.0"
+  sha256 "48783039a2489500bf6e357a7e28918bc6ca187723b9a9e0e8ddb9723f4fd38c"
 
-  url "https://hzbekorpbjfrpw9z.public.blob.vercel-storage.com/desktop/6b0c2e967ff7/Droidtty-Bridge-#{version}-arm64.dmg"
+  url "https://hzbekorpbjfrpw9z.public.blob.vercel-storage.com/desktop/48783039a248/Droidtty-Bridge-#{version}-arm64.dmg"
   name "Droidtty Bridge"
   desc "Pair your phone with Herdr to approve, answer and steer coding agents"
   homepage "https://droidtty.com"
