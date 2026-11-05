@@ -14,9 +14,9 @@ class Capslkagent < Formula
   desc "Coding agent status indicator using keyboard LEDs"
   homepage "https://github.com/jagenaujagenau/capslkagent"
   url "https://github.com/jagenaujagenau/capslkagent.git",
-      tag:      "v0.2.0",
-      revision: "cdb93c1e6f232eefef67ff24982d240bff93465f"
-  version "0.2.0"
+      tag:      "v0.2.1",
+      revision: "8c7511f65c6e51e1ad6f1ec8f011fd43241e91ad"
+  version "0.2.1"
   license "MIT"
   head "https://github.com/jagenaujagenau/capslkagent.git", branch: "main"
 
